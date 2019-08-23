@@ -1,0 +1,4 @@
+[MonitorComOperate]
+Class="Function"
+Prototype="void MonitorComOperate();"
+

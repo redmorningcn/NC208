@@ -1,0 +1,57 @@
+-nologo
+-out:f:\cvi\app\NC208\cvibuild.NC208A\Debug\NC208A.exe
+-arch:x86
+-timestamp
+-debug:2
+-res:f:\cvi\app\NC208\cvibuild.NC208A\Debug\resources.res
+-entry:_CVIWinMainStartupCodeForDebugging@0
+-base:0x400000
+-linked:f:\cvi\app\NC208\cvibuild.NC208A\Debug\linkersummary.txt
+-dlldeps:f:\cvi\app\NC208\cvibuild.NC208A\Debug\dlldependencies.txt
+-licensing:f:\cvi\app\NC208\cvibuild.NC208A\Debug\linkerlicensing.txt
+-browsedeps:f:\cvi\app\NC208\cvibuild.NC208A\Debug\moduledependencies.txt
+-stackreserve:1048576
+-stackcommit:4096
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\APP_NO_MB.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\CrcCheck.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\cvi_ansytimer.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\cvi_comm.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\E2000Motor.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\main.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\MB.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\MB_BSP.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\MB_DATA.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\MB_UTIL.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\MBM_CORE.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\MBS_CORE.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\MonitorCom.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\NO_MB_OS.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\sensor_switch.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\stringstr.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\uirbsp_config.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\uirbsp_E2000.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\uirbsp_M2001.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\uirbsp_mb_poll.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\uirbsp_mb_salve.obj
+-more:c:\program files (x86)\national instruments\cvi2017\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2017\bin\msvc\cvi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\ProgramData\National Instruments\CVI2017\bin\msvc\analysis.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\toolbox\msvc\asynctmr.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\cvitdms.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\gpib.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2017\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

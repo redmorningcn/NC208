@@ -1,0 +1,8 @@
+[MBN_FCxx_Handler]
+Class="Function"
+Prototype="unsigned char MBN_FCxx_Handler(struct modbus_ch *pch);"
+
+[NMB_Tx]
+Class="Function"
+Prototype="void NMB_Tx(struct modbus_ch *pch, unsigned char *p_reg_tbl, unsigned short nbr_bytes);"
+

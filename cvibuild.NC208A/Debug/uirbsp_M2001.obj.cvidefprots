@@ -1,0 +1,36 @@
+[OpenM2001Callback]
+Class="Function"
+Prototype="int OpenM2001Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[M2001PanelCB]
+Class="Function"
+Prototype="int M2001PanelCB(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CVI_M2001PanelHandle]
+Class="Function"
+Prototype="void CVI_M2001PanelHandle(int panel);"
+
+[M2001NodeCallback]
+Class="Function"
+Prototype="int M2001NodeCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[M2001SensorCallback]
+Class="Function"
+Prototype="int M2001SensorCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[M2001ValCallback]
+Class="Function"
+Prototype="int M2001ValCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[M2001TimerCallback]
+Class="Function"
+Prototype="int M2001TimerCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[M2001RUNCallback]
+Class="Function"
+Prototype="int M2001RUNCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[M2001ChangeCallback]
+Class="Function"
+Prototype="int M2001ChangeCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

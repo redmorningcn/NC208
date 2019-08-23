@@ -1,0 +1,194 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2017\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2017\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2017\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2017\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "app_cfg.h" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Cfg\\cvi_config" ;
+LOCATE on "APP_NO_MB.C" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source" ;
+LOCATE on "comconfig.h" = "f:\\cvi\\app\\opencom\\uir" ;
+LOCATE on "cpu.h" = "f:\\cvi\\app\\c_comm" ;
+LOCATE on "cpu_cfg.h" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Cfg\\cvi_config" ;
+LOCATE on "cpu_def.h" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Cfg\\cvi_config" ;
+LOCATE on "CrcCheck.c" = "f:\\cvi\\app\\c_comm\\crccheck" ;
+LOCATE on "CrcCheck.h" = "f:\\cvi\\app\\c_comm\\crccheck" ;
+LOCATE on "cvi_ansytimer.c" = "f:\\cvi\\app\\ansytime" ;
+LOCATE on "cvi_ansytimer.h" = "f:\\cvi\\app\\ansytime" ;
+LOCATE on "cvi_com1.h" = "f:\\cvi\\app\\opencom\\source" ;
+LOCATE on "cvi_com_operate.h" = "f:\\cvi\\app\\opencom\\source" ;
+LOCATE on "cvi_comm.c" = "f:\\cvi\\app\\cvi_comm" ;
+LOCATE on "cvi_comm.h" = "f:\\cvi\\app\\cvi_comm" ;
+LOCATE on "E2000.h" = "f:\\cvi\\app\\NC208\\uir" ;
+LOCATE on "E2000Motor.c" = "f:\\cvi\\app\\NC208\\E2000Motor" ;
+LOCATE on "E2000Motor.h" = "f:\\cvi\\app\\NC208\\E2000Motor" ;
+LOCATE on "global.h" = "f:\\cvi\\app\\c_comm" ;
+LOCATE on "includes.h" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Cfg\\cvi_config" ;
+LOCATE on "lib_def.h" = "f:\\cvi\\app\\c_comm" ;
+LOCATE on "M2001.h" = "f:\\cvi\\app\\NC208\\uir" ;
+LOCATE on "main.c" = "f:\\cvi\\app\\NC208" ;
+LOCATE on "main.h" = "f:\\cvi\\app\\NC208" ;
+LOCATE on "MB.C" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source" ;
+LOCATE on "mb.h" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source" ;
+LOCATE on "MB_BSP.C" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Ports\\pc" ;
+LOCATE on "MB_BSP.H" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Ports\\pc" ;
+LOCATE on "mb_cfg.h" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Cfg\\Template" ;
+LOCATE on "MB_DATA.C" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Cfg\\Template" ;
+LOCATE on "MB_DEF.H" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source" ;
+LOCATE on "mb_poll.h" = "f:\\cvi\\app\\cvi_modbus\\uir" ;
+LOCATE on "mb_salve.h" = "f:\\cvi\\app\\cvi_modbus\\uir" ;
+LOCATE on "MB_UTIL.C" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source" ;
+LOCATE on "MBM_CORE.C" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source" ;
+LOCATE on "MBS_CORE.C" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source" ;
+LOCATE on "modbus_poll.h" = "f:\\cvi\\app\\NC208\\uir" ;
+LOCATE on "MonitorCom.c" = "f:\\cvi\\app\\NC208\\MonitorCom" ;
+LOCATE on "MonitorCom.h" = "f:\\cvi\\app\\NC208\\MonitorCom" ;
+LOCATE on "NO_MB_OS.C" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\OS\\uCOS-III" ;
+LOCATE on "NO_MB_OS.H" = "f:\\cvi\\app\\cvi_modbus\\uC-MB\\OS\\uCOS-III" ;
+LOCATE on "sensor_switch.c" = "f:\\cvi\\app\\NC208\\sensor_switch" ;
+LOCATE on "sensor_switch.h" = "f:\\cvi\\app\\NC208\\sensor_switch" ;
+LOCATE on "stringstr.c" = "f:\\cvi\\app\\c_comm\\stringstr" ;
+LOCATE on "stringstr.h" = "f:\\cvi\\app\\c_comm\\stringstr" ;
+LOCATE on "uirbsp_config.C" = "f:\\cvi\\app\\cvi_modbus\\uir-bsp" ;
+LOCATE on "uirbsp_config.h" = "f:\\cvi\\app\\cvi_modbus\\uir-bsp" ;
+LOCATE on "uirbsp_E2000.c" = "f:\\cvi\\app\\NC208\\uir" ;
+LOCATE on "uirbsp_M2001.c" = "f:\\cvi\\app\\NC208\\uir" ;
+LOCATE on "uirbsp_mb_poll.C" = "f:\\cvi\\app\\cvi_modbus\\uir-bsp" ;
+LOCATE on "uirbsp_mb_poll.h" = "f:\\cvi\\app\\cvi_modbus\\uir-bsp" ;
+LOCATE on "uirbsp_mb_salve.C" = "f:\\cvi\\app\\cvi_modbus\\uir-bsp" ;
+LOCATE on "uirbsp_mb_salve.h" = "f:\\cvi\\app\\cvi_modbus\\uir-bsp" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\APP_NO_MB.obj" : "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source\\APP_NO_MB.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\APP_NO_MB.obj" = 1 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\APP_NO_MB.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\APP_NO_MB.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\APP_NO_MB.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\APP_NO_MB.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\APP_NO_MB.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\CrcCheck.obj" : "f:\\cvi\\app\\c_comm\\crccheck\\CrcCheck.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\CrcCheck.obj" = 2 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\CrcCheck.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\CrcCheck.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\CrcCheck.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\CrcCheck.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\CrcCheck.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_ansytimer.obj" : "f:\\cvi\\app\\ansytime\\cvi_ansytimer.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_ansytimer.obj" = 3 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_ansytimer.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_ansytimer.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_ansytimer.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_ansytimer.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_ansytimer.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_comm.obj" : "f:\\cvi\\app\\cvi_comm\\cvi_comm.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_comm.obj" = 4 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_comm.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_comm.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_comm.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_comm.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\cvi_comm.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\E2000Motor.obj" : "f:\\cvi\\app\\NC208\\E2000Motor\\E2000Motor.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\E2000Motor.obj" = 5 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\E2000Motor.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\E2000Motor.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\E2000Motor.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\E2000Motor.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\E2000Motor.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\main.obj" : "f:\\cvi\\app\\NC208\\main.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\main.obj" = 6 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\main.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\main.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\main.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\main.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\main.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB.obj" : "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source\\MB.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB.obj" = 7 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_BSP.obj" : "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Ports\\pc\\MB_BSP.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_BSP.obj" = 8 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_BSP.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_BSP.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_BSP.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_BSP.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_BSP.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_DATA.obj" : "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Cfg\\Template\\MB_DATA.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_DATA.obj" = 9 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_DATA.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_DATA.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_DATA.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_DATA.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_DATA.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_UTIL.obj" : "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source\\MB_UTIL.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_UTIL.obj" = 10 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_UTIL.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_UTIL.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_UTIL.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_UTIL.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MB_UTIL.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBM_CORE.obj" : "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source\\MBM_CORE.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBM_CORE.obj" = 11 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBM_CORE.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBM_CORE.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBM_CORE.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBM_CORE.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBM_CORE.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBS_CORE.obj" : "f:\\cvi\\app\\cvi_modbus\\uC-MB\\Source\\MBS_CORE.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBS_CORE.obj" = 12 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBS_CORE.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBS_CORE.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBS_CORE.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBS_CORE.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MBS_CORE.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MonitorCom.obj" : "f:\\cvi\\app\\NC208\\MonitorCom\\MonitorCom.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MonitorCom.obj" = 13 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MonitorCom.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MonitorCom.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MonitorCom.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MonitorCom.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\MonitorCom.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NO_MB_OS.obj" : "f:\\cvi\\app\\cvi_modbus\\uC-MB\\OS\\uCOS-III\\NO_MB_OS.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NO_MB_OS.obj" = 14 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NO_MB_OS.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NO_MB_OS.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NO_MB_OS.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NO_MB_OS.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NO_MB_OS.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\sensor_switch.obj" : "f:\\cvi\\app\\NC208\\sensor_switch\\sensor_switch.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\sensor_switch.obj" = 15 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\sensor_switch.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\sensor_switch.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\sensor_switch.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\sensor_switch.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\sensor_switch.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\stringstr.obj" : "f:\\cvi\\app\\c_comm\\stringstr\\stringstr.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\stringstr.obj" = 16 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\stringstr.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\stringstr.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\stringstr.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\stringstr.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\stringstr.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_config.obj" : "f:\\cvi\\app\\cvi_modbus\\uir-bsp\\uirbsp_config.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_config.obj" = 17 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_config.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_config.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_config.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_config.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_config.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_E2000.obj" : "f:\\cvi\\app\\NC208\\uir\\uirbsp_E2000.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_E2000.obj" = 18 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_E2000.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_E2000.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_E2000.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_E2000.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_E2000.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_M2001.obj" : "f:\\cvi\\app\\NC208\\uir\\uirbsp_M2001.c" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_M2001.obj" = 19 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_M2001.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_M2001.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_M2001.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_M2001.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_M2001.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_poll.obj" : "f:\\cvi\\app\\cvi_modbus\\uir-bsp\\uirbsp_mb_poll.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_poll.obj" = 20 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_poll.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_poll.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_poll.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_poll.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_poll.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_salve.obj" : "f:\\cvi\\app\\cvi_modbus\\uir-bsp\\uirbsp_mb_salve.C" ;
+FILENUM on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_salve.obj" = 21 ;
+DEFPROTS on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_salve.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_salve.obj.cvidefprots" ;
+OUTFILE on "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_salve.obj" = "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_salve.obj.out" ;
+PrjObjects += "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\uirbsp_mb_salve.obj" ;
+Object "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\resources.res" : "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\resources.in.rc" ;
+Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\resources.res" : "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\manifest.xml" ;
+MainFromObjects "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NC208.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NC208.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\link_options.txt" ;
+Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NC208.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\resources.res" ;
+Depends all : "f:\\cvi\\app\\NC208\\cvibuild.NC208\\Debug\\NC208.exe" ;
