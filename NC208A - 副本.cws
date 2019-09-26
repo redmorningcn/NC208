@@ -1,6 +1,6 @@
 [Workspace Header]
 Version = 1700
-Pathname = "/f/cvi/app/NC208/NC208A.cws"
+Pathname = "/f/cvi/app/NC208/NC208A - ¸±±¾.cws"
 CVI Dir = "/c/program files (x86)/national instruments/cvi2017"
 CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
 CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2017"
@@ -12,17 +12,15 @@ VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
 Number of Projects = 1
 Active Project = 1
 Project 0001 = "NC208A.prj"
-Project 0001 Folder uir Collapsed = True
-Project 0001 FolderId 0 Collapsed = True
 Project 0001 Folder source/uc-mb/port Collapsed = True
 Project 0001 FolderId 4 Collapsed = True
 Project 0001 Folder source/uir_bsp Collapsed = True
 Project 0001 FolderId 7 Collapsed = True
 Drag Bar Left = 298
-Window Top = 172
-Window Left = 432
-Window Bottom = 858
-Window Right = 1782
+Window Top = 169
+Window Left = 501
+Window Bottom = 855
+Window Right = 1851
 Maximized = True
 Maximized Children = True
 Max32 Number Of Errors = 20
@@ -36,7 +34,7 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 3
+Number of Opened Files = 6
 Window Confinement Region Enabled = True
 MainColumnWidth = 281
 FileDateColumnWidth = 70
@@ -46,8 +44,8 @@ FileSizeColumnWidth = 70
 Version = 1700
 Don't Update DistKit = False
 Platform Code = 4
-Build Configuration = "Debug"
-Warn User If Debugging Release = 1
+Build Configuration = "Release"
+Warn User If Debugging Release = 0
 Batch Build Release = False
 Batch Build Debug = False
 
@@ -58,404 +56,435 @@ Disk Date = 3573565200
 In Projects = "1,"
 
 [File 0002]
-Path = "/f/cvi/app/opencom/uir/comconfig.uir"
-File Type = "User Interface Resource"
-Disk Date = 3649210493
-In Projects = "1,"
-
-[File 0003]
-Path = "/f/cvi/app/NC208/uir/E2000.h"
-File Type = "Include"
-Disk Date = 3649197999
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0004]
-Path = "/f/cvi/app/NC208/uir/E2000.uir"
-File Type = "User Interface Resource"
-Disk Date = 3649198793
-In Projects = "1,"
-
-[File 0005]
-Path = "/f/cvi/app/NC208/uir/M2001.h"
-File Type = "Include"
-Disk Date = 3649129113
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0006]
-Path = "/f/cvi/app/NC208/uir/M2001.uir"
-File Type = "User Interface Resource"
-Disk Date = 3649198809
-In Projects = "1,"
-
-[File 0007]
-Path = "/f/cvi/app/cvi_modbus/uir/mb_poll.uir"
-File Type = "User Interface Resource"
-Disk Date = 3648872340
-In Projects = "1,"
-
-[File 0008]
-Path = "/f/cvi/app/cvi_modbus/uir/mb_salve.uir"
-File Type = "User Interface Resource"
-Disk Date = 3649213051
-In Projects = "1,"
-
-[File 0009]
-Path = "/f/cvi/app/NC208/uir/modbus_poll.h"
-File Type = "Include"
-Disk Date = 3649213048
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0010]
-Path = "/f/cvi/app/NC208/uir/modbus_poll.uir"
-File Type = "User Interface Resource"
-Disk Date = 3649213127
-In Projects = "1,"
-
-[File 0011]
-Path = "/f/cvi/app/opencom/uir/comconfig.h"
-File Type = "Include"
-Disk Date = 3649210494
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0012]
-Path = "/f/cvi/app/cvi_modbus/uir/mb_poll.h"
-File Type = "Include"
-Disk Date = 3648872340
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0013]
-Path = "/f/cvi/app/cvi_modbus/uir/mb_salve.h"
-File Type = "Include"
-Disk Date = 3649213051
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0014]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/Template/mb_cfg.h"
-File Type = "Include"
-Disk Date = 3649129571
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0015]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/Template/MB_DATA.C"
-File Type = "CSource"
-Disk Date = 3607654020
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0016]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Ports/pc/MB_BSP.C"
-File Type = "CSource"
-Disk Date = 3649297931
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0017]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Ports/pc/MB_BSP.H"
-File Type = "Include"
-Disk Date = 3649196709
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0018]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/OS/uCOS-III/NO_MB_OS.C"
-File Type = "CSource"
-Disk Date = 3649199647
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0019]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/OS/uCOS-III/NO_MB_OS.H"
-File Type = "Include"
-Disk Date = 3649191428
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0020]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/APP_NO_MB.C"
-File Type = "CSource"
-Disk Date = 3649191398
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0021]
 Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MB.C"
 File Type = "CSource"
-Disk Date = 3649122752
+Disk Date = 3649912678
 In Projects = "1,"
 Window Top = 95
 Window Left = 42
-Window Z-Order = 1
-Source Window State = "1,0,0,0,0,0,0,0,0,153,0,0,0,0,0,37,46,0,76,0,511,895,1,0,"
+Window Z-Order = 4
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,24,46,0,76,0,511,895,1,0,"
 
-[File 0022]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/mb.h"
-File Type = "Include"
-Disk Date = 3649126755
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0023]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MB_DEF.H"
-File Type = "Include"
-Disk Date = 3607307234
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0024]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MB_UTIL.C"
-File Type = "CSource"
-Disk Date = 3333351152
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0025]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MBM_CORE.C"
-File Type = "CSource"
-Disk Date = 3649020392
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0026]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MBS_CORE.C"
-File Type = "CSource"
-Disk Date = 3649135329
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0027]
-Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_config.C"
-File Type = "CSource"
-Disk Date = 3649290290
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0028]
-Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_config.h"
-File Type = "Include"
-Disk Date = 3649118655
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0029]
-Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_mb_poll.C"
-File Type = "CSource"
-Disk Date = 3648877331
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0030]
-Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_mb_poll.h"
-File Type = "Include"
-Disk Date = 3649027575
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0031]
-Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_mb_salve.C"
-File Type = "CSource"
-Disk Date = 3648694662
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0032]
-Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_mb_salve.h"
-File Type = "Include"
-Disk Date = 3648694612
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0033]
-Path = "/f/cvi/app/NC208/uir/uirbsp_E2000.c"
-File Type = "CSource"
-Disk Date = 3649198932
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0034]
-Path = "/f/cvi/app/NC208/uir/uirbsp_M2001.c"
-File Type = "CSource"
-Disk Date = 3649129143
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0035]
-Path = "/f/cvi/app/c_comm/crccheck/CrcCheck.c"
-File Type = "CSource"
-Disk Date = 3649200038
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0036]
-Path = "/f/cvi/app/c_comm/crccheck/CrcCheck.h"
-File Type = "Include"
-Disk Date = 3649200058
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0037]
-Path = "/f/cvi/app/c_comm/stringstr/stringstr.c"
-File Type = "CSource"
-Disk Date = 3648876054
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0038]
-Path = "/f/cvi/app/c_comm/stringstr/stringstr.h"
-File Type = "Include"
-Disk Date = 3608096678
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0039]
-Path = "/f/cvi/app/cvi_comm/cvi_comm.c"
-File Type = "CSource"
-Disk Date = 3606953117
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0040]
-Path = "/f/cvi/app/cvi_comm/cvi_comm.h"
-File Type = "Include"
-Disk Date = 3596700890
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0041]
-Path = "/f/cvi/app/ansytime/cvi_ansytimer.c"
-File Type = "CSource"
-Disk Date = 3649028411
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0042]
-Path = "/f/cvi/app/NC208/sensor_switch/sensor_switch.c"
-File Type = "CSource"
-Disk Date = 3649282462
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0043]
-Path = "/f/cvi/app/NC208/sensor_switch/sensor_switch.h"
-File Type = "Include"
-Disk Date = 3649281204
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0044]
-Path = "/f/cvi/app/NC208/E2000Motor/E2000Motor.c"
-File Type = "CSource"
-Disk Date = 3649282443
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0045]
-Path = "/f/cvi/app/NC208/E2000Motor/E2000Motor.h"
-File Type = "Include"
-Disk Date = 3649281180
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0046]
-Path = "/f/cvi/app/NC208/MonitorCom/MonitorCom.c"
-File Type = "CSource"
-Disk Date = 3649299586
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0047]
-Path = "/f/cvi/app/NC208/MonitorCom/MonitorCom.h"
-File Type = "Include"
-Disk Date = 3649280898
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0048]
-Path = "/f/cvi/app/NC208/main.c"
-File Type = "CSource"
-Disk Date = 3649299731
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0049]
-Path = "/f/cvi/app/NC208/main.h"
-File Type = "Include"
-Disk Date = 3649192808
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0050]
-Path = "/f/cvi/app/c_comm/lib_def.h"
-File Type = "Include"
-Disk Date = 3607411174
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0051]
+[File 0003]
 Path = "/f/cvi/app/c_comm/cpu.h"
 File Type = "Include"
 Disk Date = 3649191485
 In Projects = "1,"
 Window Top = 33
 Window Left = 10
-Window Z-Order = 3
+Window Z-Order = 6
 Source Window State = "1,0,0,0,0,0,0,0,0,78,0,0,0,0,0,13,0,0,0,0,291,875,1,0,"
 
-[File 0052]
-Path = "/f/cvi/app/c_comm/global.h"
-File Type = "Include"
-Disk Date = 3649200014
-In Projects = "1,"
-Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
-
-[File 0053]
+[File 0004]
 Path = "/f/cvi/app/opencom/source/cvi_com_operate.c"
 File Type = "CSource"
 Disk Date = 3613617748
 In Projects = ""
 Window Top = 64
 Window Left = 26
-Window Z-Order = 2
+Window Z-Order = 5
 Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,24,0,0,21,0,511,895,1,0,"
 
-[File 0054]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/cvi_config/cpu_def.h"
+[File 0005]
+Path = "/f/cvi/app/NC208/uir/modbus_poll.uir"
+File Type = "User Interface Resource"
+Disk Date = 3650084966
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Window Height = 291
+Window Width = 885
+Window Z-Order = 3
+
+[File 0006]
+Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_config.C"
+File Type = "CSource"
+Disk Date = 3650085963
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 1
+Source Window State = "1,0,0,0,0,0,0,0,0,98,0,0,0,0,0,22,259,0,270,16,291,885,1,0,"
+
+[File 0007]
+Path = "/f/cvi/app/opencom/uir/comconfig.h"
 File Type = "Include"
-Disk Date = 3549855112
+Disk Date = 3649210494
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0055]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/cvi_config/cpu_cfg.h"
+[File 0008]
+Path = "/f/cvi/app/opencom/uir/comconfig.uir"
+File Type = "User Interface Resource"
+Disk Date = 3649210493
+In Projects = "1,"
+
+[File 0009]
+Path = "/f/cvi/app/NC208/uir/E2000.h"
 File Type = "Include"
-Disk Date = 3607403354
+Disk Date = 3649197999
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0056]
+[File 0010]
+Path = "/f/cvi/app/NC208/uir/E2000.uir"
+File Type = "User Interface Resource"
+Disk Date = 3649198793
+In Projects = "1,"
+
+[File 0011]
+Path = "/f/cvi/app/NC208/uir/M2001.h"
+File Type = "Include"
+Disk Date = 3649129113
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0012]
+Path = "/f/cvi/app/NC208/uir/M2001.uir"
+File Type = "User Interface Resource"
+Disk Date = 3649198809
+In Projects = "1,"
+
+[File 0013]
+Path = "/f/cvi/app/cvi_modbus/uir/mb_poll.h"
+File Type = "Include"
+Disk Date = 3648872340
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0014]
+Path = "/f/cvi/app/cvi_modbus/uir/mb_poll.uir"
+File Type = "User Interface Resource"
+Disk Date = 3648872340
+In Projects = "1,"
+
+[File 0015]
+Path = "/f/cvi/app/cvi_modbus/uir/mb_salve.h"
+File Type = "Include"
+Disk Date = 3649213051
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0016]
+Path = "/f/cvi/app/cvi_modbus/uir/mb_salve.uir"
+File Type = "User Interface Resource"
+Disk Date = 3649213051
+In Projects = "1,"
+
+[File 0017]
+Path = "/f/cvi/app/NC208/uir/modbus_poll.h"
+File Type = "Include"
+Disk Date = 3650084966
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0018]
 Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/cvi_config/app_cfg.h"
 File Type = "Include"
 Disk Date = 3649193311
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0057]
+[File 0019]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/cvi_config/cpu_cfg.h"
+File Type = "Include"
+Disk Date = 3607403354
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0020]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/cvi_config/cpu_def.h"
+File Type = "Include"
+Disk Date = 3549855112
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0021]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/cvi_config/includes.h"
+File Type = "Include"
+Disk Date = 3607403814
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0022]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/Template/mb_cfg.h"
+File Type = "Include"
+Disk Date = 3649129571
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0023]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/Template/MB_DATA.C"
+File Type = "CSource"
+Disk Date = 3649912677
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0024]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Ports/pc/MB_BSP.C"
+File Type = "CSource"
+Disk Date = 3650085689
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0025]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Ports/pc/MB_BSP.H"
+File Type = "Include"
+Disk Date = 3649196709
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0026]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/OS/uCOS-III/NO_MB_OS.C"
+File Type = "CSource"
+Disk Date = 3649997195
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0027]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/OS/uCOS-III/NO_MB_OS.H"
+File Type = "Include"
+Disk Date = 3649191428
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0028]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/APP_NO_MB.C"
+File Type = "CSource"
+Disk Date = 3649912560
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0029]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/mb.h"
+File Type = "Include"
+Disk Date = 3649126755
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0030]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MB_DEF.H"
+File Type = "Include"
+Disk Date = 3607307234
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0031]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MB_UTIL.C"
+File Type = "CSource"
+Disk Date = 3333351152
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0032]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MBM_CORE.C"
+File Type = "CSource"
+Disk Date = 3649912733
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0033]
+Path = "/f/cvi/app/cvi_modbus/uC-MB/Source/MBS_CORE.C"
+File Type = "CSource"
+Disk Date = 3649135329
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0034]
+Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_config.h"
+File Type = "Include"
+Disk Date = 3649118655
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0035]
+Path = "/f/cvi/app/NC208/uir/uirbsp_E2000.c"
+File Type = "CSource"
+Disk Date = 3649198932
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0036]
+Path = "/f/cvi/app/NC208/uir/uirbsp_M2001.c"
+File Type = "CSource"
+Disk Date = 3649129143
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 2
+Source Window State = "1,25,25,25,30,40,40,0,0,79,0,0,0,0,0,13,7,0,25,16,291,885,1,0,"
+
+[File 0037]
+Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_mb_poll.C"
+File Type = "CSource"
+Disk Date = 3649481218
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0038]
+Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_mb_poll.h"
+File Type = "Include"
+Disk Date = 3649481307
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0039]
+Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_mb_salve.C"
+File Type = "CSource"
+Disk Date = 3649395858
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0040]
+Path = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_mb_salve.h"
+File Type = "Include"
+Disk Date = 3648694612
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0041]
+Path = "/f/cvi/app/c_comm/crccheck/CrcCheck.c"
+File Type = "CSource"
+Disk Date = 3649200038
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0042]
+Path = "/f/cvi/app/c_comm/crccheck/CrcCheck.h"
+File Type = "Include"
+Disk Date = 3649200058
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0043]
+Path = "/f/cvi/app/ansytime/cvi_ansytimer.c"
+File Type = "CSource"
+Disk Date = 3649028411
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0044]
 Path = "/f/cvi/app/ansytime/cvi_ansytimer.h"
 File Type = "Include"
 Disk Date = 3612777068
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0058]
-Path = "/f/cvi/app/cvi_modbus/uC-MB/Cfg/cvi_config/includes.h"
+[File 0045]
+Path = "/f/cvi/app/cvi_comm/cvi_comm.c"
+File Type = "CSource"
+Disk Date = 3649912560
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0046]
+Path = "/f/cvi/app/cvi_comm/cvi_comm.h"
 File Type = "Include"
-Disk Date = 3607403814
+Disk Date = 3596700890
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0047]
+Path = "/f/cvi/app/c_comm/global.h"
+File Type = "Include"
+Disk Date = 3649200014
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0048]
+Path = "/f/cvi/app/c_comm/lib_def.h"
+File Type = "Include"
+Disk Date = 3607411174
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0049]
+Path = "/f/cvi/app/c_comm/stringstr/stringstr.c"
+File Type = "CSource"
+Disk Date = 3648876054
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0050]
+Path = "/f/cvi/app/c_comm/stringstr/stringstr.h"
+File Type = "Include"
+Disk Date = 3608096678
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0051]
+Path = "/f/cvi/app/NC208/sensor_switch/sensor_switch.c"
+File Type = "CSource"
+Disk Date = 3650083759
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0052]
+Path = "/f/cvi/app/NC208/sensor_switch/sensor_switch.h"
+File Type = "Include"
+Disk Date = 3650076768
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0053]
+Path = "/f/cvi/app/NC208/E2000Motor/E2000Motor.c"
+File Type = "CSource"
+Disk Date = 3649912560
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0054]
+Path = "/f/cvi/app/NC208/E2000Motor/E2000Motor.h"
+File Type = "Include"
+Disk Date = 3649481667
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0055]
+Path = "/f/cvi/app/NC208/MonitorCom/MonitorCom.c"
+File Type = "CSource"
+Disk Date = 3650083722
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0056]
+Path = "/f/cvi/app/NC208/MonitorCom/MonitorCom.h"
+File Type = "Include"
+Disk Date = 3649280898
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0057]
+Path = "/f/cvi/app/NC208/csv/csv.h"
+File Type = "Include"
+Disk Date = 3650074173
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0058]
+Path = "/f/cvi/app/NC208/csv/cvs.c"
+File Type = "CSource"
+Disk Date = 3650082877
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0059]
+Path = "/f/cvi/app/NC208/NC208measureconfig.csv"
+File Type = "Unknown"
+Disk Date = 3650083230
+In Projects = "1,"
+
+[File 0060]
+Path = "/f/cvi/app/NC208/main.c"
+File Type = "CSource"
+Disk Date = 3650078593
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0061]
+Path = "/f/cvi/app/NC208/main.h"
+File Type = "Include"
+Disk Date = 3650083846
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
@@ -463,6 +492,9 @@ Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 Tab 0001 = "/f/cvi/app/c_comm/cpu.h"
 Tab 0002 = "/f/cvi/app/opencom/source/cvi_com_operate.c"
 Tab 0003 = "/f/cvi/app/cvi_modbus/uC-MB/Source/MB.C"
+Tab 0004 = "/f/cvi/app/cvi_modbus/uir-bsp/uirbsp_config.C"
+Tab 0005 = "/f/cvi/app/NC208/uir/modbus_poll.uir"
+Tab 0006 = "/f/cvi/app/NC208/uir/uirbsp_M2001.c"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

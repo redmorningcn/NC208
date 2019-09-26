@@ -18,13 +18,13 @@ Prototype="int Com1PanelCB(int panel, int event, void *callbackData, int eventDa
 Class="Function"
 Prototype="void SetCviCtrlMbComConfig(struct _stcUartConfig_ *sUartConfig);"
 
-[OpenCom1Callback]
-Class="Function"
-Prototype="int OpenCom1Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-
 [OpenCom2Callback]
 Class="Function"
 Prototype="int OpenCom2Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OpenCom1Callback]
+Class="Function"
+Prototype="int OpenCom1Callback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
 
 [printrecinfo]
 Class="Function"

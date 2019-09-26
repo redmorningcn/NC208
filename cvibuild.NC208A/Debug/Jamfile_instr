@@ -2,6 +2,7 @@ Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\NC208A.exe" : "f:\\cvi\\ap
 Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\NC208A.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\CrcCheck.obj" ;
 Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\NC208A.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\cvi_ansytimer.obj" ;
 Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\NC208A.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\cvi_comm.obj" ;
+Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\NC208A.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\cvs.obj" ;
 Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\NC208A.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\E2000Motor.obj" ;
 Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\NC208A.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\main.obj" ;
 Depends "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\NC208A.exe" : "f:\\cvi\\app\\NC208\\cvibuild.NC208A\\Debug\\MB.obj" ;

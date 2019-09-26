@@ -1,8 +1,0 @@
-[printftext]
-Class="Function"
-Prototype="void printftext(int panel, int id, const char *format, ...);"
-
-[strtohex]
-Class="Function"
-Prototype="int strtohex(unsigned char *str, unsigned char *buf);"
-

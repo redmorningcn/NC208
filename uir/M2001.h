@@ -24,6 +24,7 @@
 #define  M2001PANEL_M2001_TIMER           9       /* control type: timer, callback function: M2001TimerCallback */
 #define  M2001PANEL_DECORATION            10      /* control type: deco, callback function: (none) */
 #define  M2001PANEL_TEXTMSG               11      /* control type: textMsg, callback function: (none) */
+#define  M2001PANEL_TEXTMSG_3             12      /* control type: textMsg, callback function: (none) */
 
 
      /* Control Arrays: */

@@ -21,11 +21,11 @@
 #define  MAIN_COMCONFIG_2                 6       /* control type: command, callback function: OpenCom2Callback */
 #define  MAIN_COMCONFIG                   7       /* control type: command, callback function: OpenCom1Callback */
 #define  MAIN_MAIN_TIMER                  8       /* control type: timer, callback function: MainTimerCallback */
-#define  MAIN_TEXTMSG_4                   9       /* control type: textMsg, callback function: (none) */
-#define  MAIN_DECORATION_5                10      /* control type: deco, callback function: (none) */
-#define  MAIN_DECORATION_4                11      /* control type: deco, callback function: (none) */
-#define  MAIN_TEXTMSG                     12      /* control type: textMsg, callback function: (none) */
-#define  MAIN_TEXTMSG_5                   13      /* control type: textMsg, callback function: (none) */
+#define  MAIN_DECORATION_5                9       /* control type: deco, callback function: (none) */
+#define  MAIN_DECORATION_4                10      /* control type: deco, callback function: (none) */
+#define  MAIN_TEXTMSG_5                   11      /* control type: textMsg, callback function: (none) */
+#define  MAIN_TEXTMSG_4                   12      /* control type: textMsg, callback function: (none) */
+#define  MAIN_TEXTMSG                     13      /* control type: textMsg, callback function: (none) */
 
 
      /* Control Arrays: */
@@ -35,7 +35,11 @@
 
      /* Menu Bars, Menus, and Menu Items: */
 
-          /* (no menu bars in the resource file) */
+#define  MENUBAR                          1
+#define  MENUBAR_UNNAMEDM                 2
+
+#define  MENUBAR_2                        2
+#define  MENUBAR_2_UNNAMEDM               2
 
 
      /* Callback Prototypes: */

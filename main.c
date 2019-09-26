@@ -39,7 +39,7 @@
 #include "main.h"
 #include "sensor_switch.h"
 
-int gmainPanel;
+int gmainPanel = 1;
 
 
 strCtrl		sCtrl;
@@ -70,6 +70,7 @@ int main (int argc, char *argv[])
 	if (InitCVIRTE (0, argv, 0) == 0)					/* Initialize CVI libraries */
 		return -1;	/* out of memory */
 
+	
 	if ((gmainPanel = LoadPanel (0, "modbus_poll.uir", MAIN)) < 0)
 		return -1;
 	DisplayPanel (gmainPanel);
@@ -82,7 +83,10 @@ int main (int argc, char *argv[])
 
 	MB_Init(1000);								//初始化modbus频率	
 	
-	InitSensorSwitch();
+	//InitSensorSwitch();
+	extern	void InitSensorConfig_CSV(void);
+	InitSensorConfig_CSV();
+	
 	extern	void InitE2000Modbus(void);	
 	InitE2000Modbus();
 	
@@ -129,19 +133,18 @@ void CVI_MainPanelHandle(int panel)
 /////////////////////////////////////////////////?￠D?????D??￠
 	if(sCtrl.com1 != NULL && sCtrl.com1->open == 1)	  	//′??ú′ò?a
 	{				
-		SetCtrlAttribute (panel, MAIN_POLL, ATTR_DIMMED, 0);
-		SetCtrlAttribute (panel, MAIN_SLAVE, ATTR_DIMMED, 0);
+		//SetCtrlAttribute (panel, MAIN_POLL, ATTR_DIMMED, 0);
+		//SetCtrlAttribute (panel, MAIN_SLAVE, ATTR_DIMMED, 0);
 		SetCtrlAttribute (panel, MAIN_M2001, ATTR_DIMMED, 0);
 		SetCtrlAttribute (panel, MAIN_E2000, ATTR_DIMMED, 0);
-
 
 		SetCtrlAttribute (panel, MAIN_COMCONFIG, ATTR_LABEL_TEXT, "关闭串口(控制箱)");
 	}
 
 	if(sCtrl.com1 != NULL && sCtrl.com1->open == 0)	  	//′??ú1?±?
 	{
-		SetCtrlAttribute (panel, MAIN_POLL, ATTR_DIMMED, 1);
-		SetCtrlAttribute (panel, MAIN_SLAVE, ATTR_DIMMED, 1);
+		//SetCtrlAttribute (panel, MAIN_POLL, ATTR_DIMMED, 1);
+		//SetCtrlAttribute (panel, MAIN_SLAVE, ATTR_DIMMED, 1);
 		SetCtrlAttribute (panel, MAIN_M2001, ATTR_DIMMED, 1);
 		SetCtrlAttribute (panel, MAIN_E2000, ATTR_DIMMED, 1);
 		

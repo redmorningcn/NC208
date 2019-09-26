@@ -18,6 +18,7 @@
 #include  	"uirbsp_mb_poll.h"
 #include  	"global.h"
 #include  	"E2000Motor.h"
+#include  	"CrcCheck.h"
 
 
 /********************************************************************************************/
@@ -53,7 +54,7 @@ short	M2001CoidChange(short node,short val)
 		gsMBPoll.node	= node; 			 
 		gsMBPoll.addr	= 0;
 	
-		val =SW_INT16U(val);						// 高低位互换
+		val =(short)SW_INT16U(val);						// 高低位互换
 		memcpy(gsMBPoll.buf,&val,sizeof(val)); 	
 		gsMBPoll.len	= 16;	
 
@@ -119,7 +120,7 @@ void	InitSensorSwitch(void)
 			}
 		}
 		
-		g_SensorSwitchTable[i].motor = motornum;
+		g_SensorSwitchTable[i].motor = (char)motornum;
 
 		if(i%4 == 0) {												// 每4台传感器电机编号
 			motornum++;
@@ -132,7 +133,7 @@ void	InitSensorSwitch(void)
 	g_SensorChangeCtl.lstSensorNum  = 0;
 }
 
-
+#define		DELAY_US_E2000   	(2000000)
 /********************************************************************************************/
 /* 切换传感器通道*/  				
 //redmorningcn  190817
@@ -146,8 +147,23 @@ short	SensorChange(short sensornum)
 	short	node;
 	short  	val;
 
+//	if(sensornum == g_SensorChangeCtl.SensorNum )  // 传感器通道相同，不切换
+//		return len;
 	
-	if(sensornum == g_SensorChangeCtl.SensorNum )  //传感器通道相同，不切换
+	//传感器编号为255，所有传感器通道切换完成，不再进行切换。
+	if( sensornum  == 255){
+		val = 0;
+		for(node = 1;node < 18;node++){
+			len 	= M2001CoidChange( node , val );		//通道切换
+			if(	len	== 0) {	   //通道切换失败
+				Delay_Nus(DELAY_US_E2000);
+			}			
+		}
+		return len;
+	}
+	Delay_Nus(DELAY_US_E2000);
+	
+	if(g_SensorSwitchTable[sensornum].flg != 1 )   // 传感器未配置，不切换
 		return len;
 	
 	g_SensorChangeCtl.SensorNum = sensornum;
@@ -155,33 +171,74 @@ short	SensorChange(short sensornum)
 	{
 		return len;
 	}
-	//将上次编号的传感器通道切换状态取消
-	Num 	= g_SensorChangeCtl.lstSensorNum;
-	node	= g_SensorSwitchTable[Num].M2001[0].node;
-	val		= 0;									//将通道值清零
 	
-	len 	= M2001CoidChange( node , val );		//通道切换
-	if(	len	== 0) {	   //通道切换失败
-		return len;
+//	for(short tmp = 1; tmp < 20;tmp++){
+//		val = 0;
+//		M2001CoidChange( tmp , val );		//通道切换
+//		Delay_Nus(10);
+//	}
+	
+	//将上次编号的传感器通道切换状态取消
+	
+	
+	Num 	= g_SensorChangeCtl.lstSensorNum;
+	if( Num != g_SensorChangeCtl.SensorNum)				//编号相同，不切换
+	{
+		node	= g_SensorSwitchTable[Num].M2001[0].node;
+		val		= 0;									//将通道值清零
+	
+		len 	= M2001CoidChange( node , val );		//通道切换
+		if(	len	== 0) {	   //通道切换失败
+			Delay_Nus(DELAY_US_E2000);
+		}
+		len 	= M2001CoidChange( node , val );		//通道切换，再次关闭	190926
+		Delay_Nus(DELAY_US_E2000);
+		//
+		node	= g_SensorSwitchTable[Num].M2001[1].node;
+		val		= 0;
+		if(g_SensorSwitchTable[Num].M2001[1].val && node) {
+			len 	= M2001CoidChange( node , val );	//通道切换
+			if(	len	== 0) {	   //通道切换失败
+				Delay_Nus(DELAY_US_E2000);
+			}
+			len 	= M2001CoidChange( node , val );	//通道切换， 再次关闭   190926       
+		}
+		Delay_Nus(DELAY_US_E2000);
 	}
 	
-	node	= g_SensorSwitchTable[Num].M2001[1].node;
-	val		= 0;
-	len 	= M2001CoidChange( node , val );		//通道切换
-	
+	Delay_Nus(DELAY_US_E2000);
+
 	//切换到本次编号的传感器
 	Num 	= g_SensorChangeCtl.SensorNum;
-	node	= g_SensorSwitchTable[Num].M2001[0].node;	
-	val  	= g_SensorSwitchTable[Num].M2001[0].val;
-	len 	= M2001CoidChange( node , val );		//通道切换
-	if(	len	 == 0) {	   //通道切换失败
-		return len;
+
+	if( Num )
+	{
+		node	= g_SensorSwitchTable[Num].M2001[0].node;	          
+		val  	= g_SensorSwitchTable[Num].M2001[0].val;
+		
+		len 	= M2001CoidChange( node , val );		//通道切换    	Delay_Nus(DELAY_US_E2000);
+		
+		if(	len	== 0) {	   //通道切换失败
+			//return len;
+			Delay_Nus(DELAY_US_E2000);
+		}
+		Delay_Nus(DELAY_US_E2000);
+		len 	= M2001CoidChange( node , val );		//通道切换，再次打开 190926
+		
+		node	= g_SensorSwitchTable[Num].M2001[1].node;	
+		val  	= g_SensorSwitchTable[Num].M2001[1].val;
+		
+		if( val && node ) {
+			len 	= M2001CoidChange( node , val );		//通道切换
+
+			if(	len	== 0) {	   //通道切换失败
+				Delay_Nus(DELAY_US_E2000);
+				//return len;
+			}	
+			Delay_Nus(DELAY_US_E2000);
+			len 	= M2001CoidChange( node , val );		//通道切换
+		}
 	}
-	
-	node	= g_SensorSwitchTable[Num].M2001[1].node;	
-	val  	= g_SensorSwitchTable[Num].M2001[1].val;
-	len 	= M2001CoidChange( node , val );		//通道切换
-	
 	//改变切换状态
 	g_SensorChangeCtl.lstSensorNum = g_SensorChangeCtl.SensorNum; 
 	

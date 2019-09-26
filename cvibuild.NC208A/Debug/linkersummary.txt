@@ -2,6 +2,7 @@ APP_NO_MB.obj
 CrcCheck.obj
 cvi_ansytimer.obj
 cvi_comm.obj
+cvs.obj
 E2000Motor.obj
 main.obj
 MB.obj

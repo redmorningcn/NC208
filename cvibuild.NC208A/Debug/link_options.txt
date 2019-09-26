@@ -16,6 +16,7 @@
 -in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\CrcCheck.obj
 -in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\cvi_ansytimer.obj
 -in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\cvi_comm.obj
+-in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\cvs.obj
 -in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\E2000Motor.obj
 -in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\main.obj
 -in:f:\cvi\app\NC208\cvibuild.NC208A\Debug\MB.obj

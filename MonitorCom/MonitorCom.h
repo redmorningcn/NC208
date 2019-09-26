@@ -53,14 +53,14 @@ typedef struct	_stcSendMonitor
 /********************************************************************************************/
 typedef struct	_stcMonitorInfo
 {
-	char			sensorNum;			// 传感器编号
-	char			motorNum;			// 电机编号
-	char			tmp;
-	char			MonitorRecFlg:1;	// 测试台接收成功标识
-	char			MonitorSendEnFlg:1;	// 测试台发送成功标识
-	char			E2000SetFlg:1;		// 电机设置成功指令
-	char			M2001SetFlg:1;		// 数字输出模块
-	char			tmpFlg:4;			// 备用
+	unsigned char	sensorNum;			// 传感器编号
+	unsigned char	motorNum;			// 电机编号
+	unsigned char	tmp;
+	unsigned char	MonitorRecFlg:1;	// 测试台接收成功标识
+	unsigned char	MonitorSendEnFlg:1;	// 测试台发送成功标识
+	unsigned char	E2000SetFlg:1;		// 电机设置成功指令
+	unsigned char	M2001SetFlg:1;		// 数字输出模块
+	unsigned char	tmpFlg:4;			// 备用
 	unsigned int    rotate;				// 转速
 }sMonitorInfo;
 

@@ -33,14 +33,14 @@ typedef struct	_stcSensorSwitchTable_
 {
 	char	num;		// 传感器编号
 	char	motor;		// 电机编号
-	char	tmp[2];		// 缓冲
+	char	flg;		// flg = 1;该传感器需进行测试；如果为0，则不测试
+	char	tmp;		// 缓冲
 	sM2001	M2001[2];	// 模块对应值
 }sSensorSwitchTable;
 
 
 /********************************************************************************************/
 /* 传感器通道切换控制。
-
 */
 /********************************************************************************************/
 typedef struct	_stcSensorChangeCtl_   
@@ -49,16 +49,15 @@ typedef struct	_stcSensorChangeCtl_
 	short	lstChangeVal;
 	short	SensorNum;			//缓冲
 	short   ChangeVal;
-	
-	
 }stcSensorChangeCtl;
+
 
 extern	sSensorSwitchTable	g_SensorSwitchTable[ MAX_SENSOR_NUM ];		   	// 传感器切换表
 extern	stcSensorChangeCtl	g_SensorChangeCtl;								// 传感器通道切换控制字
 
-extern	void	InitSensorSwitch (void);				// 传感器切换表初始化
-extern	short	SensorChange     (short sensornum);		// 传感器切换
-extern	short	M2001CoidChange	 (short node,short val) ; // M2001控制对应通道开关
+extern	void	InitSensorSwitch (void);									// 传感器切换表初始化
+extern	short	SensorChange     (short sensornum);							// 传感器切换
+extern	short	M2001CoidChange	 (short node,short val) ; 					// M2001控制对应通道开关
 
 
 

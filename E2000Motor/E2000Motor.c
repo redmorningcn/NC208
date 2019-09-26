@@ -40,15 +40,15 @@ short	E2000RegChangeOne(short node,short addr,short val)
 
 	if(node)  {
 		//初始化 modbus主结构
-		gsMBPoll.codeflg  = CODE_REG_OP;		// 线圈操作；
-		gsMBPoll.writeflg = 1;					// 写操作；
+		gsMBPoll.codeflg  	= CODE_REG_OP_06;		// 线圈操作；
+		gsMBPoll.writeflg 	= 1;					// 写操作；
 	
-		gsMBPoll.node	= node; 			 
-		gsMBPoll.addr	= addr;
+		gsMBPoll.node		= node; 			 
+		gsMBPoll.addr		= addr;
 	
 		//val =SW_INT16U(val);						// 高低位互换
 		memcpy(gsMBPoll.buf,&val,sizeof(val)); 	
-		gsMBPoll.len	= 1;	
+		gsMBPoll.len		= 1;	
 
 		len = MB_PollOperate();	
 	}
@@ -77,6 +77,7 @@ void	InitE2000Modbus(void)
 	}
 }
 
+#define	DELAY_US_MOTOR	(1500000)
 /********************************************************************************************/
 /* 设置指定电机速度*/  				
 //redmorningcn  190819
@@ -85,30 +86,41 @@ void	InitE2000Modbus(void)
 short	SetE2000Speed(short node,short speed)
 {
 	short	len = 0;
+	unsigned int	tmp32;
+	tmp32	=  speed * 5;
+	speed	=  (short)(tmp32 / 3);  
 	
 	if(speed == 0){  		//关闭电机
 		len = E2000RegChangeOne(node,ADDR_MOTOR_CTRL,CODE_MOTOR_STOP);
 	}else{
 		
+		//设置主频X ：
+		len = E2000RegChangeOne(node,ADDR_X_FRQ_SOUREC,CODE_X_MODBUS);
+		Delay_Nus(DELAY_US_MOTOR);
+
+		//设置启动来源
+		len = E2000RegChangeOne(node,ADDR_START_SOUREC,CODE_START_MODBUS_PANEL);
+		Delay_Nus(DELAY_US_MOTOR);
+
 		//锁定设定速度
 		len = E2000RegChangeOne(node,ADDR_FRQ_TARGET,speed);
 		if(len == 0)
 			return len;
 		
-		Delay_Nus(100);
+//		Delay_Nus(100);
 		//锁定正转
-		len = E2000RegChangeOne(node,ADDR_MOTOR_CTRL,CODE_TURN_CLOCKWISE);
-		if(len == 0)
-			return len;
+//		len = E2000RegChangeOne(node,ADDR_MOTOR_WISE,CODE_TURN_CLOCKWISE);
+//		if(len == 0)
+//			return len;
 		
-		Delay_Nus(100);
+		Delay_Nus(DELAY_US_MOTOR);
 
 		//设定正转
 		len = E2000RegChangeOne(node,ADDR_MOTOR_CTRL,CODE_START_CLOCKWISE);
 		if(len == 0)
 			return len;
 		
-		Delay_Nus(100);
+		Delay_Nus(DELAY_US_MOTOR);
 	}
 	return len;
 }

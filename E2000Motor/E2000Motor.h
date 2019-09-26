@@ -21,6 +21,8 @@
 #define		ADDR_FRQ_TARGET			0x010D		/* 地址：目标频率（转速） 	*/	
 #define		ADDR_TURN_CHOOSE		0x0102		/* 地址：正转锁定			*/	
 #define		ADDR_MOTOR_CTRL			0x2000		/* 地址：电机启动、停止转动 */
+#define		ADDR_MOTOR_WISE			0x2000		/* 地址：电机方向			*/
+		
 
 #define		CODE_START_CLOCKWISE	0x0001		/* 指令：启动正转			*/
 #define		CODE_START_UNCLOCKWISE	0x0002		/* 指令：启动反转			*/  

@@ -18,5 +18,7 @@ typedef struct	_strCtrl_
 }strCtrl;				//串口配置结构体
 
 extern	strCtrl		sCtrl;
+extern	int 	gmainPanel;
+
 
 #endif

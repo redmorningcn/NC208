@@ -148,7 +148,9 @@ int CVICALLBACK M2001ChangeCallback (int panel, int control, int event,
 	{
 		case EVENT_COMMIT:
 			GetCtrlVal(panel,M2001PANEL_M2001SENSOR,&l_SensorNum) ;		// ȡ�豸ID
+			
 			SensorChange(l_SensorNum);
+			
 			break;
 	}
 	return 0;

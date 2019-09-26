@@ -16,7 +16,7 @@ Prototype="unsigned char GetCheckSum(unsigned char *Buf, unsigned int Len);"
 
 [GetCheckSumNR]
 Class="Function"
-Prototype="unsigned char GetCheckSumNR(unsigned char *Buf, unsigned int Len);"
+Prototype="unsigned char GetCheckSumNR(unsigned char *Buf, int Len);"
 
 [GetCRCR16_8408_FFFF_FFFF_Table]
 Class="Function"
